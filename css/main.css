@@ -215,20 +215,26 @@ img {
       border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase-1.jpg") no-repeat center right/cover;
+  background: url("../img/showcase-2.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
 #header-home .header-content {
-    text-align: center;
-    padding-top: 20%; }
+    text-align: left;
+    padding-top: 8%; }
 #header-home .header-content h1 {
       font-size: 4rem;
-      line-height: 1.2; }
+      line-height: 1.2;
+      padding: 1rem; 
+    }
 
 #header-inner {
-  background: url("../img/showcase-1.jpg") no-repeat 20% 30%/cover;
+  background: #333;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
+
+#header-home{
+  border-bottom: 3px solid #ffbc00;
+}
 
 #home-a .specials {
   margin-top: 3rem;
@@ -423,25 +429,49 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .fab:hover {
         background: #ffbc00; }
+      #header-home .fab:hover{
+        color: white;
+      }
 
-@media (max-width: 800px) {
-  #header-home {
-    height: 30rem; }
-    #header-home .header-content {
-      padding-top: 5rem; } }
+      #header-home .fab{
+        font-size: 30px; 
+        color: #ffbc00; 
+      }
+      #header-home .header-content .btn-main{
+        margin: 20px 0 0 50px ;
+      }
+      #header-home .header-content .fab{
+        margin: 5px 0 0 40px;
+      }
 
 @media (max-width: 500px) {
+  #header-home {
+    background: url("../img/mobile-showcase.jpg") no-repeat center right/cover; }
+
   #main-nav {
     flex-direction: column;
     align-items: center; }
     #main-nav li {
       padding: 1rem; }
+  #header-home .header-content h1{
+    font-size: 2rem;
+  }
+  #header-home .header-content .btn-main{
+    padding: 6px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  #header-home .header-content .fab{
+    font-size: 1rem;
+    margin: 0 10px 0 15px;
+  }
   #header-home {
-    height: 10rem;
+    /* height: 10rem; */
     border-bottom: 3px solid #ffbc00;
     background-position: 20% 30%; }
-    #header-home .header-content {
-      display: none; }
+    /* #header-home .header-content {
+      display: none; } */
   #header-inner {
     height: 10rem; }
   #home-a .specials,
